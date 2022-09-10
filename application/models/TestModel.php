@@ -1,11 +1,14 @@
 <?php
 
 namespace application\models;
+use application\core\Model;
+use application\core\validators\ResultsVerification;
 
 class TestModel extends Model {
     public $validator;
 
     public function TestModel() {
+        $this->saveUserInfo("Test");
         $this->validator = new ResultsVerification();
         static::$tablename = 'test';
         static::$dbfields = array('fullname', 'question_1', 'question_2', 'question_3', 'count', 'date');

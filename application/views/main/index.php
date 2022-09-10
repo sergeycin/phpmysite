@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="title-block">
-            <h1 class="title">Majesty Developer</h1>
-        </div>
-        <div class="time"></div>
-    </header>
+<header>
+    <?php 
+     echo require 'application/lib/header.php';
+    ?>
+    <div class="time"></div>
+  </header>
          
     <nav>
         <ul class="content__links">

@@ -1,6 +1,6 @@
 <?php
 
-namespace application\models;
+namespace application\core\validators;
 
 class CustomFormValidation extends FormValidation {
     public function CustomFormValidation() {

@@ -12,9 +12,10 @@ abstract class Controller {
         $this->route = $route;
         $this->view = new View($route);
         $model = $route['controller'].'Model';
-        $this->model = $this->loadModel('MainModel');
-        # Fix model load
-        // $this->model = $this->loadModel($model);
+       
+        $this->model = $this->loadModel($model);
+
+
     }
 
     public function loadModel($name) {

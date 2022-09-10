@@ -23,6 +23,12 @@ class Router {
 
     public function match() {
         $url = trim($_SERVER['REQUEST_URI'], '/'); #Where we are located
+        $customUrl= substr($url, 0, strpos($url, "?"));
+        if ($customUrl != '') {
+            $customUrl = substr($customUrl, 0, -1);
+            $url = $customUrl;
+        }
+       // debug($customUrl);
         foreach ($this->routes as $route => $params) {
             if (preg_match($route, $url, $matches)) {
                 $this->params = $params;
@@ -47,6 +53,7 @@ class Router {
                 View::errorCode(404);
             }
         } else {
+            
            View::errorCode(404);
         }
     }
