@@ -14,7 +14,7 @@ abstract class Controller {
         $model = $route['controller'].'Model';
         $this->model = $this->loadModel('MainModel');
         # Fix model load
-        // $this->model = $this->loadModel($model);
+       // $this->model = $this->loadModel($model);
     }
 
     public function loadModel($name) {

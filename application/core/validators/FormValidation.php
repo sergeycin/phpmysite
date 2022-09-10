@@ -1,7 +1,6 @@
 <?php 
 
-namespace application\models;
-
+namespace application\core\validators;
 
 class FormValidation {
     public $errors = [];
@@ -31,7 +30,10 @@ class FormValidation {
         ],
         'title' => [
             'isNotEmpty'
-        ]
+        ],
+        'message' => [
+            'isNotEmpty'
+        ],
     ];
 
     public function setRule($field_name, $validator_name) {

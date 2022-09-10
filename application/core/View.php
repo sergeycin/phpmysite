@@ -8,7 +8,8 @@ class View {
 
     public function __construct($route) {
         $this->route = $route;
-        if ($route['action'] == 'check') {
+        $formActions = ['check', 'create', 'add'];
+        if ( in_array($route['action'], $formActions)) {
             $this->path = $route['controller'].'/index';
         } else {
             $this->path = $route['controller'].'/'.$route['action'];

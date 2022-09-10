@@ -1,6 +1,8 @@
 <?php
 
 namespace application\models;
+use application\core\Model;
+use application\core\validators\ResultsVerification;
 
 class TestModel extends Model {
     public $validator;

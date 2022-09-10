@@ -17,7 +17,6 @@ class TestController extends Controller {
             //var_dump($errors);
 			if (empty($errors)) {
                 $this->model->resultVerification->checkAns($_POST);
-                //debug($_POST);
                 //$this->model->createTest($_POST);
                 $_POST = array();
                 $result = $this->model->resultVerification->getResult();
