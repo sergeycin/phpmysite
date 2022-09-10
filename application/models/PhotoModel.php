@@ -7,6 +7,7 @@ class PhotoModel extends Model {
     protected $photos = [];
 
     public function __construct() {
+        $this->saveUserInfo("Photo");
         for ($i = 1; $i <= 10; $i++) {
             $this->photos["Img_".$i] = "http://dummyimage.com/200";
         }

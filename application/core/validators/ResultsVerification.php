@@ -1,6 +1,6 @@
 <?php
 
-namespace application\models;
+namespace application\core\validators;
 
 class ResultsVerification extends CustomFormValidation {
     private $result = 0;
@@ -14,7 +14,6 @@ class ResultsVerification extends CustomFormValidation {
     }
 
     public function checkAns($post_array) {
-        //debug($this->answers);
         foreach ($this->answers as $key => $value) {
             if ($post_array[$key] == $value) {
                 $this->result++;

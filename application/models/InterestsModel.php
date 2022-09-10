@@ -4,6 +4,11 @@ namespace application\models;
 use application\core\Model;
 
 class InterestsModel extends Model {
+    function __construct()
+    {
+        $this->saveUserInfo("Interests");
+    }
+
     static function getData() {	
         return [
             [

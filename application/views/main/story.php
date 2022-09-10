@@ -10,10 +10,10 @@
 </head>
 
 <body>
-  <header>
-    <div class="title-block">
-      <h1 class="title">Majesty Developer</h1>
-    </div>
+<header>
+    <?php 
+     echo require 'application/lib/header.php';
+    ?>
     <div class="time"></div>
   </header>
   <nav>

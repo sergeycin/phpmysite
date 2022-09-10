@@ -1,7 +1,6 @@
 <?php 
 
-namespace application\models;
-
+namespace application\core\validators;
 
 class FormValidation {
     public $errors = [];
@@ -30,6 +29,21 @@ class FormValidation {
             'isNotEmpty'
         ],
         'title' => [
+            'isNotEmpty'
+        ],
+        'message' => [
+            'isNotEmpty'
+        ],
+        'login' => [
+            'isNotEmpty'
+        ],
+        'fullname' => [
+            'isNotEmpty'
+        ],
+        'password' => [
+            'isNotEmpty'
+        ],
+        'id' => [
             'isNotEmpty'
         ]
     ];
