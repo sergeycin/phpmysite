@@ -35,7 +35,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam corporis vitae similique ipsam hic fuga possimus. Facilis, a sunt.</p>
              </div>
 
-             <div class="main__image">  <img class="me-photo" src="../images/me.jpeg" alt=""></div>
+             <div class="main__image">  <img class="me-photo" src="/public/images/me.jpeg" alt=""></div>
          </div>
      </div>
 </body>

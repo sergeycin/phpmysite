@@ -13,7 +13,7 @@ body {
     max-height: fit-content;
     background: linear-gradient(21deg, #dd03e4, #5611ec);
     overflow-x: hidden;
-
+    min-height: 100vh;
     color: #fff;
 }
 
