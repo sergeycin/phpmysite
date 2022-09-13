@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majesty Developer</title>
+    <title>About Reality developer</title>
     <link rel="stylesheet" href="/public/css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -29,7 +29,7 @@
     <div class="photo__background"></div>
     <header>
         <div class="title-block">
-            <h1 class="title">Majesty Developer</h1>
+        <a href="/"> <h1 class="title">About Reality developer</h1></a>
         </div>
         <div class="time"></div>
     </header>

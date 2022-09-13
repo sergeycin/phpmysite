@@ -357,7 +357,7 @@ function correctTest() {
 
 
 function findNumTitle() {
-  let variable;
+  let variable = 0;
   if (document.querySelector(".content.img")) {
     numTitles = 2;
     numStory.Photo += 1;

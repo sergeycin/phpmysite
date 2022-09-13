@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majesty Developer</title>
+    <title>About Reality developer</title>
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 
 <body>
     <header>
         <div class="title-block">
-            <h1 class="title">Majesty Developer</h1>
+        <a href="/"> <h1 class="title">About Reality developer</h1></a>
         </div>
         <div class="time"></div>
     </header>
@@ -34,6 +34,7 @@
                 <a href="#films">My favourite films</a>
                 <a href="#games">My favourite games</a> -->
             </ul>
+            <iframe style="margin: 0 auto;" width="100%" height="515" src="https://www.youtube.com/embed/LembwKDo1Dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <?php
 
             foreach ($data as $row) {
