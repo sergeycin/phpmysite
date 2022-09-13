@@ -21,13 +21,21 @@
         </ul>
     </nav>
 
-     <div class="content-wrapper">
-         <div class="content index">
-             <h1>Main info</h1>
-             <h2>Artiom Kalilnkin Vitalievich</h2>
-             <img src="/public/images/beauty.jpeg" alt="">
-             <h3>IS/b-19-2-o</h3>
-             <h3>Lab work 1: Explore the capabilities of the hypertext markup language HTML and CSS cascading style sheets</h3>
+    <div class="main-wrap">
+        <h1 style="text-transform:uppercase; text-align: center;">About Me</h1>
+         <div class="main__row">
+             <div class="main__text">
+                <h3>Ptycin Sergey Pavlovich</h3>
+                <p>IS/b-19-1-z</p>
+               
+             
+                <p>Lab work 1: Explore the capabilities of the hypertext markup language HTML and CSS cascading style sheets</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium ad, iste asperiores in dicta temporibus odio voluptatibus aut ab?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam corporis vitae similique ipsam hic fuga possimus. Facilis, a sunt.</p>
+             </div>
+
+             <div class="main__image">  <img class="me-photo" src="../images/me.jpeg" alt=""></div>
          </div>
      </div>
 </body>
