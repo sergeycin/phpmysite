@@ -359,33 +359,35 @@ function correctTest() {
 function findNumTitle() {
   let variable = 0;
   if (document.querySelector(".content.img")) {
+  
     numTitles = 2;
     numStory.Photo += 1;
-    variable = Number(localStorage.numPhoto);
+    variable = Number(localStorage.numPhoto) || 0;
+    console.log(variable)
     localStorage.numPhoto = variable + 1;
   }
   if (document.querySelector(".content.about")) {
     numTitles = 0;
     numStory.Education += 1;
-    variable = Number(localStorage.numEducation);
+    variable = Number(localStorage.numEducation) || 0;
     localStorage.numEducation = variable + 1; 
   }
   if (document.querySelector("#films")) {
     numTitles = 1;
     numStory.Interest += 1;
-    variable = Number(localStorage.numInterest);
+    variable = Number(localStorage.numInterest) || 0;
     localStorage.numInterest = variable + 1;
   }
   if (document.querySelector("#FIO")) {
     numTitles = 3;
     numStory.Contact += 1;
-    variable = Number(localStorage.numContact);
+    variable = Number(localStorage.numContact) || 0;
     localStorage.numContact = variable + 1;
   }
   if (document.querySelector(".text-white.test")) {
     numTitles = 4;
     numStory.Test += 1;
-    variable = Number(localStorage.numTest);
+    variable = Number(localStorage.numTest) || 0;
     localStorage.numTest = variable + 1;
   }
 
