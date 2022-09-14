@@ -56,4 +56,5 @@ class BlogModel extends Model {
         ";
         $this->executeSQL($sql);
     }
+
 }

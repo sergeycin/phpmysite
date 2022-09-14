@@ -38,6 +38,7 @@ class EditBlogModel extends Model
 
         $comments = [];
          foreach ($posts as $post) {
+           
             $sql = "SELECT * FROM `comments` WHERE `id_post`=" . $post['id'] . " ORDER BY `date` DESC";
             array_push($comments, $this->executeSQL($sql));
       }

@@ -23,7 +23,7 @@
     </div>
     <header>
         <div class="title-block">
-            <h1 class="title">Majesty Developer</h1>
+            <h1 class="title">About Realyti Developer</h1>
         </div>
         <div class="time"></div>
     </header>
