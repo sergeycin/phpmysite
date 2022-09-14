@@ -42,7 +42,7 @@
         <?php 
             if (isset($errors)) {
                 if (count($errors) > 0) {
-                    echo "<span style='color: red;'>Произошла ошибка! Отзыв не получилось отправить. Скорее всего, <strike>беды с башкой</strike>  проблемы с бд</span>";
+                    echo "<span style='color: red;'>Произошла ошибка! Отзыв не получилось отправить. Скорее всего,  проблемы с базой данный</span>";
                 } else {
                     echo "<p class='result-block__item success'>Отзыв был отправлен</p>";
                 }

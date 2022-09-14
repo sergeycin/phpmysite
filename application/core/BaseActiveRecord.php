@@ -114,6 +114,7 @@ class BaseActiveRecord
 		return $result;
 	}
 
+
 	public static function findByPage($offset, $rowsPerPage)
 	{
 		static::setupConnection();
@@ -128,6 +129,7 @@ class BaseActiveRecord
 		return $result;
 	}
 
+	
 	public static function getCount()
 	{
 		static::setupConnection();
