@@ -7,7 +7,7 @@ class BlogModel extends Model {
     public function BlogModel() {
         static::$tablename = 'blog';
         static::$dbfields = array('title', 'image', 'text', 'date');
-        $this->saveUserInfo("Блох");
+        $this->saveUserInfo("Блог");
     }
 
     public function getPosts($get_array) {
