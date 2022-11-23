@@ -44,7 +44,7 @@
 
      let xmlhttp = new XMLHttpRequest();
 
-     xmlhttp.open("POST", "http://localhost:2000/editBlog/edit", true);
+     xmlhttp.open("POST", "http://phpmysite/editBlog/edit", true);
      xmlhttp.setRequestHeader("Content-Type", "text/xml; charset=UTF-8");
      xmlhttp.send(xmlString);
 
