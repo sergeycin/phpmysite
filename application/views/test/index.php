@@ -118,6 +118,7 @@
 
         <div class='result-block'>
         <?php 
+       
             if (isset($errors)) {
                 foreach ($errors as $key => $item) {
                     echo "<p class='result-block__item error'>$item</p>";
