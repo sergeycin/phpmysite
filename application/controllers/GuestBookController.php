@@ -13,6 +13,7 @@ class GuestBookController extends Controller {
     
     function createAction() {
 		if (!empty($_POST)) {
+    
 			$this->model->validator->validate($_POST);
             $errors = $this->model->validator->getErrors();
 
