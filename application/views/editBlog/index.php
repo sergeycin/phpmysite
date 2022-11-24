@@ -76,7 +76,7 @@
                                         data-title='<?= $post['title'] ?>'
                                         data-message='<?= $post['text'] ?>'
                                     >
-                                        <img src=/public/images/edit.png />
+                                        <!-- <img src=/public/images/edit.png /> -->
                                     </button>
                                 </div>
                                 <div class="card-footer">
