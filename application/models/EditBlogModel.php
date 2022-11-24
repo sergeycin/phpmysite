@@ -9,7 +9,7 @@ class EditBlogModel extends Model
     public function EditBlogModel()
     {
         static::$tablename = 'blog';
-        static::$dbfields = array('title', 'image', 'text', 'date');
+        static::$dbfields = array('id_post','title', 'image', 'text', 'date');
     }
 
     public function getPosts($get_array)

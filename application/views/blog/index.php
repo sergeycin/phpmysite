@@ -73,13 +73,13 @@
 
                             <div class="card-comment__add">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" name="comment" data-id=<?= $post['id'] ?> placeholder="Введите ваш комментарий" aria-describedby="send-btn" autocomplete="off">
+                                    <input type="text" class="form-control" name="comment" data-id="1" placeholder="Введите ваш комментарий" aria-describedby="send-btn" autocomplete="off">
                                     <div class="input-group-append">
                                         <button 
                                             class="btn btn-outline-secondary" 
                                             type="button" 
                                             id="send-btn"
-                                            onClick="createScript(<?= $post['id'] ?>, 'Artiom')"
+                                            onClick="createScript(<?= $post['id'] ?>, 'Sergey')"
                                         >
                                             Отправить
                                         </button>

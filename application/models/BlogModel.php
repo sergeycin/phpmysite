@@ -6,7 +6,7 @@ use application\core\Model;
 class BlogModel extends Model {
     public function BlogModel() {
         static::$tablename = 'blog';
-        static::$dbfields = array('title', 'image', 'text', 'date');
+        static::$dbfields = array('id_post','title', 'image', 'text', 'date');
         $this->saveUserInfo("Блог");
     }
 
