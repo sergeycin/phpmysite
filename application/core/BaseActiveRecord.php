@@ -33,7 +33,7 @@ class BaseActiveRecord
 	{
 		if (!isset(static::$pdo)) {
 			try {
-				static::$pdo = new PDO("mysql:dbname=web;host=localhost","root","");
+				static::$pdo = new PDO("mysql:dbname=web;host=localhost","root","root");
 			} catch (PDOException $ex) {
 				die("Ошибка подключения к БД:  $ex");
 			}
