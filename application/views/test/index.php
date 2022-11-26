@@ -125,11 +125,11 @@
             } elseif (isset($result)) {
                 echo "<p style='color: transparent;'>Вы ответили верно на $result из 3 вопросов!</p>";
                 if ($result < 2) {
-                    echo '<p>Failure, Misha go to be a Python Programmer. Such stupid).</p>';
-                    echo "<img src='https://media.istockphoto.com/vectors/fail-ink-stamp-vector-id951985126?k=20&m=951985126&s=612x612&w=0&h=vq_zrYB1EdKILKuO3wMW5e9M4VdGFLSJPGXe4dp84k4=' alt='Картинка неприемлемо' style='width: 500px;'>";
+                    echo '<p>Failure.</p>';
+                   
                 } else {
-                    echo '<p>Success, Misha go to be a JavaScript Programmer. OOP sucks.</p>';
-                    echo "<img src='https://cdn.xxl.thumbs.canstockphoto.com/ok-3d-people-man-person-with-a-huge-tick-and-thumb-up-drawings_csp15025439.jpg' alt='Картинка приемлемо' style='width: 500px;'>";
+                    echo '<p>Success</p>';
+                   
                 }
             }
         ?>
