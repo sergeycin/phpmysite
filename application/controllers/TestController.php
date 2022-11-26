@@ -11,9 +11,9 @@ class TestController extends Controller {
     
     
     function checkAction() {
-		if (!empty($_POST)) {
+		if (!empty($_POST)) {  
 		    //   $this->model->validator->validate($_POST);
-            // $errors = $this->model->validator->getErrors();
+           // $errors = $this->model->validator->getErrors();
             //var_dump($errors);
 			if (empty($errors)) {
                 $this->model->resultVerification->checkAns($_POST);
