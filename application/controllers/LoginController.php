@@ -77,14 +77,14 @@ class LoginController extends Controller
     function checkLoginAction()
     {
         $findUserByLogin = $this->model->findByField($_POST['login'], 'login');
-        $findUserByEmail = $this->model->findByField($_POST['email'], 'email');
+        // $findUserByEmail = $this->model->findByField($_POST['email'], 'email');
 
         $result = [];
 
-        if ($findUserByEmail != null) {
-            array_push($result, "Данный email уже существует");
-        }
-
+        // if ($findUserByEmail != null) {
+        //     array_push($result, "Данный email уже существует");
+        // }
+        array_push($result, array('result' => "Данный логин уже существует"));
         if ($findUserByLogin != null) {
             array_push($result, "Данный логин уже существует");
         }

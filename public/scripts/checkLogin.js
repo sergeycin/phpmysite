@@ -1,16 +1,18 @@
 const resultBlock = document.getElementsByClassName("result-block")[0];
 const loginInput = document.querySelector("input[name=login]");
-const emailInput = document.querySelector("input[name=Email]");
+// const emailInput = document.querySelector("input[name=email]");
 
 const fetchCheck = (login, email) => {
     const formData = new FormData();
+   
     formData.append("login", login);
-    formData.append("email", email);
+    // formData.append("email", email);
 
     fetch("/login/checkLogin", { method: "POST", body: formData })
         .then(response => response.clone())
         .then(data => {
-            console.log(data)
+            let datatemp = data.json()
+            console.log(datatemp)
             resultBlock.innerHTML = "";
             if (data.length) {
                 data.forEach(err => {
@@ -25,9 +27,9 @@ const fetchCheck = (login, email) => {
 };
 
 loginInput.addEventListener("input", e => {
-    fetchCheck(e.currentTarget.value, emailInput.value);
+    fetchCheck(e.currentTarget.value, loginInput.value);
 });
 
-emailInput.addEventListener("input", e => {
-    fetchCheck(loginInput.value, e.currentTarget.value);
-});
+// emailInput.addEventListener("input", e => {
+//     fetchCheck(loginInput.value, e.currentTarget.value);
+// });
